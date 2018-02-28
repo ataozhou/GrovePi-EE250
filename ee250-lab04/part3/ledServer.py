@@ -26,7 +26,6 @@ def Main():
 		print(data)
 		if str(data) == "LED_ON":
 			digitalWrite(led,1)
-			print("fucking turn on")
 		elif str(data) == "LED_OFF":
 			digitalWrite(led,0)
 	c.close()
