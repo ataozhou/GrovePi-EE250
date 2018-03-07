@@ -37,7 +37,7 @@ import grovepi
 
 # Connect the Grove Ultrasonic Ranger to digital port D4
 # SIG,NC,VCC,GND
-ultrasonic_ranger = 4
+ultrasonic_ranger = 2
 
 while True:
     try:
@@ -45,6 +45,6 @@ while True:
         print(grovepi.ultrasonicRead(ultrasonic_ranger))
 
     except TypeError:
-        print ("Error")
+        print ("Type Error")
     except IOError:
-        print ("Error")
+        print ("IO Error")
